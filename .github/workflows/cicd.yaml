@@ -21,5 +21,8 @@ jobs:
           java HelloWorld.java
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: |
+          pwd
+          ls -la
+          chmod +x render.sh
           ./render.sh
-          working-directory: Documents
+        working-directory: Documents
